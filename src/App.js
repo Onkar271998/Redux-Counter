@@ -1,6 +1,6 @@
-import logo from "./logo.svg";
+
 import "./App.css";
-import Counter from "./Counter";
+// import Counter from "./Counter";
 import { useDispatch, useSelector } from "react-redux";
 function App() {
   const count=useSelector((state)=>state.counter.count);  
@@ -14,6 +14,9 @@ function App() {
   dispach({type:"ADD"})
 }}>plus</button>
 
+{/* <input onChange={()=>{
+  dispach()
+}}></input> */}
 
 <button onClick={()=>{
   dispach({type:"minus"})

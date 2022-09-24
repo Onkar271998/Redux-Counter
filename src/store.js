@@ -24,7 +24,23 @@ const counterReducer=(state=initialState,action)=>{
               return{ 
                 count:state.count-1 ,
               }
+
+              
         }
+        case"incr":{
+            return{ 
+              count:state.count-1 ,
+            }
+
+            
+      }
+      case"minus":{
+        return{ 
+          count:state.count-1 ,
+        }
+
+        
+  }
         default:{
             return  state;
         }
